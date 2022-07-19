@@ -1,0 +1,19 @@
+body{
+    padding: 3% 7% 0 7%;
+}
+h1{
+    font-family: 'Amaranth', sans-serif;
+    color: white;
+}
+p{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+.mo-salah{
+    height: 646px;
+}
+.top-part{
+    display: flex;
+    background-color: rgb(12, 12, 12);
+    height: 646;
+}
