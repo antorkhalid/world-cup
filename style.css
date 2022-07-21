@@ -12,6 +12,12 @@
     height: 646;
     max-width: 100vw;
     border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Football Animation */
+.top-part:hover .football{
+    transform: translate(100px, 50px) scale(0.001) rotate(45deg)
 }
 .top-text-button{
     padding-left: 60px;
@@ -43,8 +49,14 @@
 .mo-salah-img{
     height: 576px;
     padding-top: 70px;
-    padding-right: 200px;
+    padding-right: 0px;
     
+}
+.football{
+    height: 80px;
+    padding-top: 565px;
+    padding-right: 150px;
+    transition: transform 1s ease-in;
 }
     /*--------------- 
        Grid Section
@@ -58,7 +70,7 @@
     text-align: center;
     margin-right: 50px;
     border-radius: 20px;
-    margin-bottom: 360px;
+    margin-bottom: 450px;
 }    
 .nav-button{
     font-family: 'Poppins', sans-serif;
@@ -109,6 +121,7 @@
     border-color: red;
     background-color: white;
     color: rgb(0, 0, 0);
+    cursor: pointer;
 }
 .match-h2{
     margin-top: 10px;
@@ -119,6 +132,22 @@
     font-weight:bold ;
     font-family: 'Poppins', sans-serif;
 }
+.view-all{
+    background-color: red;
+    color: white;
+    padding: 10px 15px 10px 15px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 50px;
+    visibility: hidden;
+}
+.grid-and-view-all{
+    text-align: center;
+}
+
     /*----------
        Footer
     -----------*/
@@ -183,7 +212,12 @@
     .watch-live-button-div{
         padding-top: 10px;
     }
-
+    .top-part:hover .football{
+        display: none;
+    }
+    .football{
+        display: none;
+    }
     /*-- Grid Section --*/
 
     /* Navigation */
@@ -199,6 +233,7 @@
         border: 1px solid rgb(22, 22, 22);
         margin-left: 10px;
         margin-right: 10px;
+        padding: 5px 10px 5px 10px;
         
     }
 
@@ -208,6 +243,9 @@
     }
     .matches-grid{
         grid-template-columns: repeat(2, 1fr);
+    }
+    .view-all{
+        visibility: visible;
     }
 
     /*-- Footer --*/
@@ -261,6 +299,12 @@
     }
     .watch-live-button{
         font-size: 13px;
+    }
+    .top-part:hover .football{
+        display: none;
+    }
+    .football{
+        display: none;
     }
     
     /*-- Grid Section --*/
